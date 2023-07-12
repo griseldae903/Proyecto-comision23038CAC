@@ -1,0 +1,85 @@
+
+@media screen and (max-width:585px){
+.main-bodegones{ /*no afecta separacion del footer con resto del body*/
+    margin-bottom: 0;
+}
+
+
+.propuesta, #celeste, #azul{
+    display: block;
+    margin-bottom: 0;
+    font-size: 15px;
+
+}
+.art1{
+    width: 100%;
+}
+#img-2{
+  
+        background: #000 url(./recursos/langostino.jpg) no-repeat center top;
+        width: 100%;
+        height: 50vh;
+    }
+#img-1{
+  
+        background: #000 url(./recursos/asado.jpg) no-repeat center top;
+        width: 100%;
+        height:50vh;
+    }
+#img-3{
+  
+        background: #000 url(./recursos/huevo.jpg) no-repeat center top;
+        width: 100%;
+        height:48vh;
+    }
+#img-4{
+  
+        background: #000 url(./recursos/choclo.jpg) no-repeat center top;
+        width: 100%;
+        height:45vh;
+    }
+/* h3{
+    font-size: 50%;
+}  */
+.art1{
+    width: 90vw;
+    margin: 25px;
+    font-size: 15px;
+
+}
+#art-dos{
+    width: 90vw;
+    height:36vh; 
+   text-align: center;
+    font-size: 15px;
+            
+}
+#art-tres{
+    width: 90vw;
+    margin: 25px;
+    font-size: 15px;
+    text-align: center;
+}
+.texto-bod{padding-bottom: 20px;}
+#par-bodegones{
+    margin-left:80px;
+    width: 90vw;
+    text-align: center;
+}
+footer{
+    margin: 0;/*2*/
+}
+.boton-bodegon {
+    font-size: small;
+}
+} 
+@media screen and (max-width:507px){
+    #cae{
+        height: 95vh;
+    }}
+@media screen and (max-width:388px){
+    #art-dos{
+        height: 45vh;
+    }}
+
+

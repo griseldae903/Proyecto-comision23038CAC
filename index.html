@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Club del Bodegon</title>
+    <link rel="stylesheet" href="estiloindex.css">
+    <link rel="icon" href="./recursos/logo chiquito png.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/804bbb64aa.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header class="header">
+        <section id="navegadorbox">
+            <figure id="logo">
+                <a href="index.html"><img src="./recursos/logo chiquito png.png"></a>
+            </figure>
+
+            <input type="checkbox" id="menuu-check">
+            <label id="menuu" for="menuu-check">
+                <span id="menuu-abrir">&#9776;</span>                
+                <span id="menuu-cerrar">&#9776;</span>
+            </label>
+        <nav id="opacidad">
+
+
+
+                <ul id="nav">
+                    <li class="menu"> <a class="nav" href="index.html">Inicio</a></li>
+                    <li class="menu"> <a class="nav" href="bodegones.html" >Bodegones</a></li>
+                    <li class="menu"> <a class="nav" href="nosotros.html" >Nosotros</a></li>
+                    <li class="menu" > <a class="nav" href="contacto.html" id="menu-reserva">Reservas</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <i class="flecha_arriba" id="flecha_arriba">
+        <img src="./recursos/icono.png" alt="flecha apuntando hacia arriba" class="flecha">
+    </i>
+
+    <main>
+
+        <section id="herounit"><!--section introduccion-->
+            <article id="textounit">
+                <h1 class="zoom-in">Los mejores bodegones de capital</h1>
+                <p id="parrafounit">Conocé y disfrutá de las eminentes propuestas que la Ciudad de Buenos Aires te ofrece. </p>
+                <a href="contacto.html" id="boton-unit" class="nav">Reservá ahora</a>
+            </article>
+        </section>
+
+
+        <section id="beneficios"><!-- section de dibujos descriptivos-->
+            <h2 id="tit-bene">Todas nuestras propuestas cuentan con:</h2>
+
+            <article id="razones">
+                <article class="beneficios">
+                    <figure class="imagen-bene invisible">
+                        <img  src="./recursos/chef.png" title="chef" >
+                    </figure>
+                    <h3 id="sub-1">Magnífico servicio</h3>
+                </article>
+
+                <article class="beneficios">
+                    <figure class="imagen-bene invisible">
+                        <img src="./recursos/comida.png" title="comida">
+                        
+                    </figure>
+                    <h3 id="sub-2">Excelente comida</h3>
+                </article>
+
+                
+                <article class="beneficios">
+                    <figure class="imagen-bene invisible">
+                        <img src="./recursos/atmosfera.png" title="atmósfera">
+                    </figure>
+                    <h3 id="sub-3">Buena atmósfera</h3>
+                </article>
+            </article>
+        </section>
+
+        <section id="platos"><!--seccion 3 fotos-->
+            <h2 id="tit-platos">Los platillos más solicitados</h2><!--empieza-->
+
+            <article id="propuesta1"><!--primer article, solo un display:flex-->
+                <article class="art1">
+                    <h3 class="sub-comida">Milanesa napolitana</h3>
+                    <p class="par-comida">La milanesa a la napolitana es un plato típico de la gastronomía rioplatense consiste en una milanesa llevada al horno para ser recubierta como una pizza, con rodajas de tomate y queso mozzarella, añadiendo diversos ingredientes (como jamón o cebolla). Habitualmente se sirve con guarnición de papas fritas.</p>
+                    <a href="./contacto.html" class="enlace-comida nav">Reservá ahora en <span class="lineaAbajo">Manolo</span></a>
+                </article>
+
+                <div class="imagen"></div>
+
+            </article>
+
+            <article id="propuesta-2"><!--segundo article, solo un display:flex-->
+                
+                <div id="imagen-dos"> </div>
+
+                <article id="art-dos">
+                    <h3 class="sub-comida">Tortilla de papa</h3>
+                    <p class="par-comida">La tortilla de papas es una tortilla u omelet (es decir, huevo batido, cuajado con aceite en la sartén) a la que se le agrega patatas troceadas. Se trata de uno de los platos más conocidos de la cocina española, siendo un producto muy popular que se puede encontrar en casi cualquier bar o restaurante.</p>
+                    <a href="./contacto.html" class="enlace-comida nav">Reservá ahora en <span class="lineaAbajo">Plato Profundo</span></a>
+                </article>
+
+                <div id="imagen-dos-celular"></div>
+            </article>
+
+            <article id="propuesta-tres"><!--tercer article, solo un display:flex-->
+                <article id="art-tres">
+                    <h3 class="sub-comida">Mousse de chocolate</h3>
+                    <p class="par-comida">Postre original de la cocina francesa que consiste en una crema suave y espumosa, que se sirve sola o se utiliza para rellenar postres dulces. Se puede elaborar con chocolate blanco o negro y sus principales ingredientes son huevo, azúcar, chocolate, manteca o nata. Tiene un alto valor calórico.</p>
+                    <a href="./contacto.html" class="enlace-comida nav">Reservá ahora en <span class="lineaAbajo">Grill House</span></a>
+                    
+                </article>
+
+                <div id="imagen-tres"> </div>
+                
+                
+            </article>
+
+
+    </main>
+
+    <footer>
+
+        <figure>
+            <img src="./recursos/logo-fin.png" alt="logo">
+        </figure>
+
+        <p class=>Copyright © 2022. El club del bodegón S.A. Todos los derechos reservados. <br>Diego S.- Sol M.- Grise E.</p>
+
+        <article>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com/?lang=es" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        </article>
+
+    </footer>
+
+    <script src="./javaScript/valida.js"></script>
+
+    
+</body>
+</html>

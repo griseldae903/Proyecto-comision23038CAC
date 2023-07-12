@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Club del Bodegon</title>
+    <link rel="stylesheet" href="estiloindex.css">
+    <link rel="icon" href="./recursos/logo chiquito png.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/804bbb64aa.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header class="header">
+        <section id="navegadorbox">
+            <figure id="logo">
+                <a href="index.html"><img src="./recursos/logo chiquito png.png"></a>
+            </figure>
+
+            <input type="checkbox" id="menuu-check">
+            <label id="menuu" for="menuu-check">
+                <span id="menuu-abrir">&#9776;</span>
+                <span id="menuu-cerrar">&#9776;</span>
+            </label>
+            <nav id="opacidad">
+
+                <ul id="nav">
+                    <li class="menu"> <a class="nav" href="index.html" >Inicio</a></li>
+                    <li class="menu"> <a class="nav" href="bodegones.html" >Bodegones</a></li>
+                    <li class="menu"> <a  class="nav" href="nosotros.html" >Nosotros</a></li>
+                    <li class="menu" > <a class="nav" href="contacto.html" id="menu-reserva">Reservas</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <i class="flecha_arriba" id="flecha_arriba">
+        <img src="./recursos/icono.png" alt="flecha apuntando hacia arriba" class="flecha">
+    </i>
+    
+    <main class="main-contacto">
+        <h1 class="h1-contacto">Formulario de reserva</h1>
+        <form action="#" name = "res" method="get">
+            <fieldset class="field-reserva">
+                
+                <section id="titular">
+                    <h3 class="sub-form">Titular de la reserva</h3>
+                    
+                        <label for="name" class="block"> Su nombre</label>
+                        <input type="text" name="name" id="name"  v-model="name" placeholder="°°°" class="form" required>
+                        <p id="escrito"></p>
+
+                        <label for="apellido" class="block"> Su apellido</label>
+                        <input type="text" id="apellido" name="apellido" v-model="apellido" placeholder="°°°" class="form" required>
+                        <p id="ape"></p>
+
+                        <label for="email" class="block">Su mail</label>
+                        <input type="email" id="email" name="email" v-model="email" placeholder="°°°" class="form" required>
+                        <p id="meil"></p>
+                    
+                        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+                        <script src="./javaScript/scriptVue.js"></script>
+                </section>
+                    
+                <section id="momento">
+                    <h3 class="sub-form">Fecha y hora de reserva</h3>
+                    
+                        <label for="date" class="block">Fecha de reserva</label>
+                        <input type="date" name="date" id="date" min="2023-05-11" max="2023-07-31" required class="form">
+
+                        <label for="time" class="block">Horario de la reserva (12 a 23 hs)</label>
+                        <input type="time" name="time" id="time" min="12:00" max="23:00" required class="form">
+                    
+                </section>
+
+                <section id="comensales">
+                    <h3 class="sub-form">Cantidad de comensales</h3>
+                    
+                        <label for="adultos" class="block">Adultos:</label>
+                        <input type="number" name="adultos" id="adultos" min="0" required placeholder="Cantidad de adultos" class="form">
+                        <p id="cantAdultos"></p>
+
+                        <label for="menores" class="block">Menores:</label>
+                        <input type="number" name="menores" id="menores" min="0" placeholder="Cantidad de menores" class="form">
+                        <p id="cantMenores"></p>
+                    
+                </section>
+
+                <section id="bodegon">
+                    <h3 class="sub-form">Bodegón elegido</h3>
+                    
+                    <article class="circulo"> 
+                        <input type="radio" name="bodega" id="casa" class="radio" value="casa">
+                        <label for="casa" class="circle">Como en casa</label>
+                    </article>
+
+                    <article class="circulo">
+                        <input type="radio" name="bodega" id="grill" class="radio" value="grill">
+                        <label for="grill" class="circle">Grill House </label>
+                    </article>
+
+                    <article class="circulo">
+                        <input type="radio" name="bodega" id="profundo" class="radio" value="profundo">
+                        <label for="profundo" class="circle">Plato Profundo </label>
+                    </article>
+
+                    <article class="circulo">
+                        <input type="radio" name="bodega" id="manolo" class="radio" value="manolo">
+                        <label for="manolo" class="circle">Manolo </label>
+                    </article>
+                    <p id="bodego"></p>
+
+                </section>
+
+                
+            </fieldset>
+
+            <section id="botones">
+
+                <button class="btn-enviar" type="submit" onclick="validaForm()">Enviar Reserva</button>
+        
+            </section>
+            
+        </form>
+
+        <section id="encontranos">
+            <article id="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.02592900752!2d-58.4743917!3d-34.6540481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9655553e6bd%3A0x9dfd590e4570144d!2sAv.%20Eva%20Per%C3%B3n%204430%2C%20C1407%20CABA!5e0!3m2!1ses-419!2sar!4v1681336812677!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
+            </article>
+
+            <article id="contacto">
+                <ul class="list-con">
+                    <li class="nombre-list">Llamanos al:</li>
+                    <li class="hijo-list">1157420542</li>
+                </ul>
+
+                <ul class="list-con">
+                    <li class="nombre-list">Escribinos al:</li>
+                    <li class="hijo-list"> <a id="mail" href="mailto:clubdelbodegon@gmail.com">clubdelbodegon@gmail.com</a></li>
+                </ul>
+
+                <ul class="list-con">
+                    <li class="nombre-list">Encontranos en:</li>
+                    <li class="hijo-list">Av. Eva Perón 4430</li>
+                </ul>
+
+                
+            </article>
+        </section>
+    </main>
+
+    <footer>
+
+        <figure>
+            <img src="./recursos/logo-fin.png" alt="logo">
+        </figure>
+
+        <p class=>Copyright © 2022. El club del bodegón S.A. Todos los derechos reservados.<br>Diego S.- Sol M.- Grise E.</p>
+
+        <article>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com/?lang=es" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        </article>
+
+    </footer>
+
+    <script src="./javaScript/valida.js"></script>
+    
+
+</body>
+</html>
